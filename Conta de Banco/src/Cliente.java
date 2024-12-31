@@ -1,7 +1,7 @@
 public class Cliente {
     String nome;
     String tipoConta;
-    double saldoInicial = 0;
+    double saldo = 0;
 
     public String mostrarDados() {
         return """
@@ -10,6 +10,6 @@ public class Cliente {
                 Tipo de conta:  %s
                 Saldo inicial:  R$ %.2f
                 ********************************************
-                """.formatted(this.nome, this.tipoConta, this.saldoInicial);
+                """.formatted(this.nome, this.tipoConta, this.saldo);
     }
 }
