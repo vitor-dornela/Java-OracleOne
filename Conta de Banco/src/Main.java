@@ -1,11 +1,9 @@
 import java.util.Scanner;
-
-import static java.awt.SystemColor.menu;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
+
+    //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+    public static void main() {
         definirClientes();
         executarOperacao();
 
@@ -13,13 +11,14 @@ public class Main {
 
     static Cliente vitor;
 
-    public static void definirClientes () {
+    public static void definirClientes() {
         vitor = new Cliente();
         vitor.nome = "Vitor Dornela Mascarenhas";
         vitor.tipoConta = "Conta Corrente";
         vitor.saldo = 1000;
         System.out.println(vitor.mostrarDados());
     }
+
     public static void mostrarMenu() {
         String menu = """
                 --------------------------
@@ -35,7 +34,6 @@ public class Main {
     }
 
 
-
     public static void executarOperacao() {
         Scanner sc = new Scanner(System.in);
         int numeroDigitado;
@@ -46,14 +44,14 @@ public class Main {
 
             switch (numeroDigitado) {
                 case 1:
-                    System.out.println("\nSeu saldo atual: %.2f".formatted(vitor.saldo));
+                    System.out.printf("\nSeu saldo atual: %.2f%n", vitor.saldo);
                     break;
 
                 case 2:
                     System.out.println("Digite o valor a ser recebido: ");
                     double valorRecebido = sc.nextDouble();
                     vitor.saldo += valorRecebido;
-                    System.out.println("\nSeu novo saldo é: %.2f".formatted(vitor.saldo));
+                    System.out.printf("\nSeu novo saldo é: %.2f%n", vitor.saldo);
                     break;
 
                 case 3:
@@ -61,7 +59,7 @@ public class Main {
                     double valorTransferido = sc.nextDouble();
                     if (valorTransferido <= vitor.saldo) {
                         vitor.saldo -= valorTransferido;
-                        System.out.println("\nSeu novo saldo é: %.2f".formatted(vitor.saldo));
+                        System.out.printf("\nSeu novo saldo é: %.2f%n", vitor.saldo);
                     } else {
                         System.out.println("\nSaldo insuficiente");
                     }
@@ -76,7 +74,4 @@ public class Main {
             }
         } while (numeroDigitado != 4);
     }
-
-
-
 }
