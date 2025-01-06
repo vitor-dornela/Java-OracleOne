@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Conta de Banco/Conta de Banco.iml" filepath="$PROJECT_DIR$/Conta de Banco/Conta de Banco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Conta de Banco/InterfaceTributavel/InterfaceTributavel.iml" filepath="$PROJECT_DIR$/Conta de Banco/InterfaceTributavel/InterfaceTributavel.iml" />
       <module fileurl="file://$PROJECT_DIR$/Oracle One.iml" filepath="$PROJECT_DIR$/Oracle One.iml" />
     </modules>
   </component>
