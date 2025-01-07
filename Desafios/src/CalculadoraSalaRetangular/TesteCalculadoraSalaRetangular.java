@@ -1,6 +1,6 @@
 package CalculadoraSalaRetangular;
 
-public class Main {
+public class TesteCalculadoraSalaRetangular {
     public static void main(String[] args) {
         CalculadoraSalaRetangular calculadora = new CalculadoraSalaRetangular();
 
