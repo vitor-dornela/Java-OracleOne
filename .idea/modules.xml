@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CalcularArea/CalcularArea.iml" filepath="$PROJECT_DIR$/CalcularArea/CalcularArea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CalcularArea2/CalcularArea2.iml" filepath="$PROJECT_DIR$/CalcularArea2/CalcularArea2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Conta de Banco/Conta de Banco.iml" filepath="$PROJECT_DIR$/Conta de Banco/Conta de Banco.iml" />
       <module fileurl="file://$PROJECT_DIR$/Desafios/Desafios.iml" filepath="$PROJECT_DIR$/Desafios/Desafios.iml" />
       <module fileurl="file://$PROJECT_DIR$/InterfaceTributavel/InterfaceTributavel.iml" filepath="$PROJECT_DIR$/InterfaceTributavel/InterfaceTributavel.iml" />
